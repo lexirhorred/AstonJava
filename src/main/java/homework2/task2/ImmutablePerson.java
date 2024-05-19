@@ -14,6 +14,22 @@ public final class ImmutablePerson {
         this.hobbies = hobbies;
     }
 
+//    public void setName(String newName) {
+//        this.name = newName;
+//    }
+//
+//    public void setAge(int newAge) {
+//        this.age = newAge;
+//    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
     public List<String> getHobbies() {
         return this.hobbies;
     }
