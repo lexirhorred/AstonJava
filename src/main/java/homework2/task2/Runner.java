@@ -1,9 +1,7 @@
-package task2.homework.task2;
+package homework2.task2;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Runner {
     public static void main(String[] args) {

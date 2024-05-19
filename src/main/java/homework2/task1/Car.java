@@ -1,4 +1,4 @@
-package task2.homework.task1;
+package homework2.task1;
 
 public abstract class Car implements Vehicle {
     protected int numberOfDoors;

@@ -1,4 +1,4 @@
-package task1.homework;
+package homework1;
 
 public class Person {
     static int totalMen;

@@ -1,7 +1,6 @@
-package task2.homework.task2;
+package homework2.task2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public final class ImmutablePerson {

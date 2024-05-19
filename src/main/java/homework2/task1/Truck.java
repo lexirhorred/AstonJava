@@ -1,18 +1,17 @@
-package task2.homework.task1;
+package homework2.task1;
 
-public class Sedan extends Car {
-    private final String luxuryLevel;
+public class Truck extends Car {
+    private final int maxLoadCapacity;
 
-
-    public Sedan(String luxuryLevel, int numberOfDoors, int trunkCapacity, String fuelType) {
-        this.luxuryLevel = luxuryLevel;
+    public Truck(int maxLoadCapacity, int numberOfDoors, int trunkCapacity, String fuelType) {
+        this.maxLoadCapacity = maxLoadCapacity;
         this.numberOfDoors = numberOfDoors;
         this.trunkCapacity = trunkCapacity;
         this.fuelType = fuelType;
     }
 
-    public String getLuxuryLevel() {
-        return this.luxuryLevel;
+    public int getMaxLoadCapacity() {
+        return this.maxLoadCapacity;
     }
 
     @Override
