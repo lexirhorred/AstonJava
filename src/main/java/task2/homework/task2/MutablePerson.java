@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MutablePerson {
-    String name;
-    int age;
-    List<String> hobbies;
+    private String name;
+    private int age;
+    private List<String> hobbies;
 
-    public MutablePerson(String name, int age, List<String> hobbies) {
+    public MutablePerson(String name, int age, ArrayList<String> hobbies) {
         this.name = name;
         this.age = age;
         this.hobbies = hobbies;
