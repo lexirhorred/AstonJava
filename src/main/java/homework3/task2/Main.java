@@ -8,18 +8,23 @@ public class Main {
     public static void main(String[] args) {
         List<String> strList = new ArrayList<>();
         int avgStrLength = 0;
-        Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i < 3; ++i) {
-            System.out.print("Введите строку " + i + ": ");
-            strList.addLast(sc.nextLine());
-        }
+        inputStrings(strList);
 
         avgStrLength = getAvgStrLength(strList);
         for (String str : strList) {
             if (str.length() < avgStrLength) {
                 System.out.println("Строка: \"" + str + "\". Длина: " + str.length() + " символов.");
             }
+        }
+    }
+
+    private static void inputStrings(List<String> strList) {
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 3; ++i) {
+            System.out.print("Введите строку " + i + ": ");
+            strList.addLast(sc.nextLine());
         }
     }
 

@@ -9,17 +9,22 @@ public class Main {
         List<String> strList = new ArrayList<>();
         String minStr;
         String maxStr;
+
+        inputStrings(strList);
+
+        minStr = getMinString(strList);
+        maxStr = getMaxString(strList);
+        System.out.println("Самая короткая строка: \"" + minStr + "\". Длина: " + minStr.length() + " символов.");
+        System.out.println("Самая длинная строка: \"" + maxStr + "\". Длина: " + maxStr.length() + " символов.");
+    }
+
+    private static void inputStrings(List<String> strList) {
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < 3; ++i) {
             System.out.print("Введите строку " + i + ": ");
             strList.addLast(sc.nextLine());
         }
-
-        minStr = getMinString(strList);
-        maxStr = getMaxString(strList);
-        System.out.println("Самая короткая строка: \"" + minStr + "\". Длина: " + minStr.length() + " символов.");
-        System.out.println("Самая длинная строка: \"" + maxStr + "\". Длина: " + maxStr.length() + " символов.");
     }
 
     private static String getMaxString(List<String> lst) {

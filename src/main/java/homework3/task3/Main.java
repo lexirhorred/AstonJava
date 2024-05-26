@@ -8,16 +8,22 @@ public class Main {
         List<String> strList = new ArrayList<>();
         String word;
 
-        for (int i = 0; i < 3; ++i) {
-            System.out.print("Введите строку " + i + ": ");
-            strList.addLast(sc.nextLine());
-        }
+        inputStrings(strList);
 
         word = findWord(strList);
         if (!word.isEmpty()) {
             System.out.println("Первое слово, состоящее только из различных символов: " + findWord(strList));
         } else {
             System.out.println("Нет слов, состоящих только из различных символов.");
+        }
+    }
+
+    private static void inputStrings(List<String> strList) {
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 3; ++i) {
+            System.out.print("Введите строку " + i + ": ");
+            strList.addLast(sc.nextLine());
         }
     }
 
