@@ -56,7 +56,9 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return this.name.equals(student.getName()) && this.group.equals(student.getGroup()) && this.course == student.getCourse();
+        return this.name.equals(student.getName()) &&
+                this.group.equals(student.getGroup()) &&
+                this.course == student.getCourse();
     }
 
     @Override
