@@ -10,7 +10,7 @@ public class Login {
         if (login == null || login.length() >= 20 || !Pattern.matches(loginRegex, login)) {
             throw new WrongLoginException("Incorrect login.");
         }
-        if (password.length() >= 20 || !Pattern.matches(passwdRegex, password) || !password.equals(confirmPassword)) {
+        if (password == null || password.length() >= 20 || !Pattern.matches(passwdRegex, password) || !password.equals(confirmPassword)) {
             throw new WrongPasswordException("Incorrect password.");
         }
 
