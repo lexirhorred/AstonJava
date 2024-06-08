@@ -14,7 +14,7 @@ public class Shop {
 
     public static void main(String[] args) {
         int timer = 0;
-        int totalMilliseconds = 1000 * 160 * 2;
+        int totalMilliseconds = 1000 * 60 * 2;
         Random rnd = new Random();
 
         while (timer < totalMilliseconds) {
