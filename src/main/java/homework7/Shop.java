@@ -1,6 +1,5 @@
 package homework7;
 
-import java.sql.Array;
 import java.util.*;
 
 public class Shop {
