@@ -81,5 +81,6 @@ public class Buyer extends Thread implements IBuyer, IUseBasket {
             System.out.println('\t' + "-" + good.getName());
         }
         System.out.println();
+
     }
 }

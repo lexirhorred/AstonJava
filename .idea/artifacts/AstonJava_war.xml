@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AstonJava:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/AstonJava_war</output-path>
+    <root id="archive" name="AstonJava_war.war">
+      <element id="artifact" artifact-name="AstonJava:war exploded" />
+    </root>
+  </artifact>
+</component>
